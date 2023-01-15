@@ -2,8 +2,6 @@ import socket
 from os import listdir
 from re import findall
 from utility import wait_for_acknowledge
-
-"""Global Var"""
 buff_size = 1024
 fileList = [file for file in listdir() if findall(r'.jpg',file) != []] 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
